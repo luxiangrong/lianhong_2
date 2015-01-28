@@ -1,6 +1,6 @@
 @import "mixins.less";
 
-@font-family-base: "Microsoft YaHei", "微软雅黑", sans-serif;
+@import "my-variables.less";
 
 * {
   .box-sizing(content-box);
@@ -29,7 +29,53 @@
     &.icon-a {
       background-position: 0 0;
     }
+    &.icon-b {
+      background-position: -16px 0 ;
+    }
+    &.icon-c {
+      background-position: -32px 0;
+    }
+    &.icon-d {
+      background-position: -48px 0;
+    }
+    &.icon-e {
+      background-position: -64px 0;
+    }
+    &.icon-f {
+      background-position: -80px 0;
+    }
   }
+}
+
+.icon-new {
+  width: 21px;
+  height: 7px;
+  display: inline-block;
+  background: url(../images/ic_new.png) no-repeat center center;
+}
+
+.icon-up {
+  height: 16px;
+  width: 20px;
+  display: inline-block;
+  background: url(../images/ic_up.png) no-repeat center center;
+  font-size: 8px;
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+  line-height: 20px;
+}
+
+.icon-comment {
+  height: 16px;
+  width: 20px;
+  display: inline-block;
+  background: url(../images/ic_comment.png) no-repeat center 5px;
+  font-size: 8px;
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+  line-height: 20px;
 }
 
 #header {

@@ -1,0 +1,88 @@
+.news-box {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.news-box h3 {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-weight: bold;
+  color: #5287bd;
+  margin-bottom: 10px;
+}
+.news-box h3 a.more {
+  font-size: 12px;
+  background: url(../images/more.png) no-repeat 5px 5px;
+  font-weight: normal;
+  border: 1px solid #d4e3f1;
+  padding: 3px 5px;
+  padding-left: 15px;
+  float: right;
+}
+.news-box h3 a.more:hover {
+  text-decoration: none;
+}
+.news-box .banner-image {
+  position: relative;
+}
+.news-box .banner-image p {
+  position: absolute;
+  width: 22px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: url(../images/alpha_bg_01.png) repeat;
+  color: #fff;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  text-align: center;
+}
+.news-box .banner-image p span {
+  display: block;
+  padding-top: 5px;
+}
+.news-box ul {
+  border: 1px solid #dfdfdf;
+  padding: 16px;
+  list-style: none;
+}
+.news-box ul li {
+  list-style: none;
+  background: url(../images/list_style_1.png) left center no-repeat;
+  padding-left: 10px;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  margin-top: 10px;
+}
+.news-box ul li:first-child {
+  margin-top: 0px;
+}
+.news-box ul li .icon-new {
+  margin-left: 10px;
+}
+.news-box ul li a {
+  color: #333333;
+}
+.news-box ul li.first {
+  margin-top: 0px;
+  padding-left: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: none;
+}
+.news-box ul li.first .title-image {
+  float: left;
+  margin-right: 10px;
+}
+.news-box ul li.first p {
+  line-height: 1.8;
+}
+.news-box ul li.first p a {
+  display: block;
+  color: #3fa3ef;
+}
+.news-box ul li.first:before,
+.news-box ul li.first:after {
+  content: " ";
+  display: table;
+}
+.news-box ul li.first:after {
+  clear: both;
+}

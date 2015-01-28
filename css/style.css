@@ -26,6 +26,49 @@
 .icon.icon-16.icon-a {
   background-position: 0 0;
 }
+.icon.icon-16.icon-b {
+  background-position: -16px 0;
+}
+.icon.icon-16.icon-c {
+  background-position: -32px 0;
+}
+.icon.icon-16.icon-d {
+  background-position: -48px 0;
+}
+.icon.icon-16.icon-e {
+  background-position: -64px 0;
+}
+.icon.icon-16.icon-f {
+  background-position: -80px 0;
+}
+.icon-new {
+  width: 21px;
+  height: 7px;
+  display: inline-block;
+  background: url(../images/ic_new.png) no-repeat center center;
+}
+.icon-up {
+  height: 16px;
+  width: 20px;
+  display: inline-block;
+  background: url(../images/ic_up.png) no-repeat center center;
+  font-size: 8px;
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+  line-height: 20px;
+}
+.icon-comment {
+  height: 16px;
+  width: 20px;
+  display: inline-block;
+  background: url(../images/ic_comment.png) no-repeat center 5px;
+  font-size: 8px;
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+  line-height: 20px;
+}
 #header {
   height: 111px;
   border-bottom: 3px solid #3fa3ef;
@@ -144,6 +187,7 @@
 }
 .news-box {
   font-size: 12px;
+  margin-bottom: 15px;
 }
 .news-box h3 {
   margin: 0;
@@ -165,18 +209,49 @@
 .news-box h3 a.more:hover {
   text-decoration: none;
 }
+.news-box .banner-image {
+  position: relative;
+}
+.news-box .banner-image p {
+  position: absolute;
+  width: 22px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: url(../images/alpha_bg_01.png) repeat;
+  color: #fff;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  text-align: center;
+}
+.news-box .banner-image p span {
+  display: block;
+  padding-top: 5px;
+}
 .news-box ul {
   border: 1px solid #dfdfdf;
   padding: 16px;
-  padding-left: 6px;
   list-style: none;
 }
 .news-box ul li {
   list-style: none;
   background: url(../images/list_style_1.png) left center no-repeat;
   padding-left: 10px;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  margin-top: 10px;
+}
+.news-box ul li:first-child {
+  margin-top: 0px;
+}
+.news-box ul li .icon-new {
+  margin-left: 10px;
+}
+.news-box ul li a {
+  color: #333333;
 }
 .news-box ul li.first {
+  margin-top: 0px;
+  padding-left: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: none;
 }
 .news-box ul li.first .title-image {
@@ -188,6 +263,7 @@
 }
 .news-box ul li.first p a {
   display: block;
+  color: #3fa3ef;
 }
 .news-box ul li.first:before,
 .news-box ul li.first:after {
