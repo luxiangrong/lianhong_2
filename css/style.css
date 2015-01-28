@@ -1,0 +1,199 @@
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.row {
+  margin: 0;
+}
+.container {
+  width: 1250px !important;
+  max-width: none !important;
+  padding: 0px;
+}
+.icon.icon-16 {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url(../images/sprite_icon_16.png) no-repeat;
+}
+.icon.icon-16.icon-a {
+  background-position: 0 0;
+}
+#header {
+  height: 111px;
+  border-bottom: 3px solid #3fa3ef;
+}
+#header .container {
+  position: relative;
+  height: 100%;
+}
+#header .container .logo {
+  position: absolute;
+  left: 0px;
+  top: 15px;
+}
+#header .container .search-box {
+  position: absolute;
+  right: 0px;
+  top: 25px;
+}
+#header .container .search-box .search-input {
+  height: 26px;
+  width: 235px;
+  border: 1px solid #cccccc;
+  padding-right: 22px;
+  padding-left: 5px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+#header .container .search-box .search-btn {
+  position: absolute;
+  border: none;
+  right: 0px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/ic_search.png) no-repeat center center;
+  text-indent: -10000px;
+}
+#header .container .top-nav {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+#header .container .top-nav ul {
+  list-style: none;
+}
+#header .container .top-nav ul li.nav-item {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  color: #fff;
+  list-style: none;
+  float: left;
+  width: 108px;
+  line-height: 34px;
+  margin-left: 3px;
+  text-align: center;
+  background: url(../images/sprite_1.png) no-repeat;
+}
+#header .container .top-nav ul li.nav-item:hover {
+  background-position: 0 -272px !important;
+}
+#header .container .top-nav ul li.nav-item a,
+#header .container .top-nav ul li.nav-item a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#header .container .top-nav ul li.nav-item.nav-item-1 {
+  background-position: 0 0;
+}
+#header .container .top-nav ul li.nav-item.nav-item-2 {
+  background-position: 0 -34px;
+}
+#header .container .top-nav ul li.nav-item.nav-item-3 {
+  background-position: 0 -68px;
+}
+#header .container .top-nav ul li.nav-item.nav-item-4 {
+  background-position: 0 -102px;
+}
+#header .container .top-nav ul li.nav-item.nav-item-5 {
+  background-position: 0 -136px;
+}
+#header .container .top-nav ul li.nav-item.nav-item-6 {
+  background-position: 0 -170px;
+}
+#header .container .top-nav ul li.nav-item.nav-item-7 {
+  background-position: 0 -204px;
+}
+#header .container .top-nav ul li.nav-item.nav-item-8 {
+  background-position: 0 -238px;
+}
+#content {
+  margin-top: 30px;
+}
+#content .col-left {
+  float: left;
+  min-height: 1px;
+  padding-right: 20px;
+  position: relative;
+  width: 316px;
+  height: 10px;
+}
+#content .col-right {
+  float: left;
+  min-height: 1px;
+  padding-left: 20px;
+  position: relative;
+  width: 316px;
+  height: 10px;
+}
+#content .col-center {
+  float: left;
+  min-height: 1px;
+  padding: 0 20px;
+  position: relative;
+  width: 538px;
+  height: 10px;
+}
+.news-box {
+  font-size: 12px;
+}
+.news-box h3 {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-weight: bold;
+  color: #5287bd;
+  margin-bottom: 10px;
+}
+.news-box h3 a.more {
+  font-size: 12px;
+  background: url(../images/more.png) no-repeat 5px 5px;
+  font-weight: normal;
+  border: 1px solid #d4e3f1;
+  padding: 3px 5px;
+  padding-left: 15px;
+  float: right;
+}
+.news-box h3 a.more:hover {
+  text-decoration: none;
+}
+.news-box ul {
+  border: 1px solid #dfdfdf;
+  padding: 16px;
+  padding-left: 6px;
+  list-style: none;
+}
+.news-box ul li {
+  list-style: none;
+  background: url(../images/list_style_1.png) left center no-repeat;
+  padding-left: 10px;
+}
+.news-box ul li.first {
+  background: none;
+}
+.news-box ul li.first .title-image {
+  float: left;
+  margin-right: 10px;
+}
+.news-box ul li.first p {
+  line-height: 1.8;
+}
+.news-box ul li.first p a {
+  display: block;
+}
+.news-box ul li.first:before,
+.news-box ul li.first:after {
+  content: " ";
+  display: table;
+}
+.news-box ul li.first:after {
+  clear: both;
+}
