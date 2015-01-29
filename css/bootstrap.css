@@ -1075,12 +1075,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #333333;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #0d0d0d;
   text-decoration: underline;
 }
 a:focus {
@@ -3268,7 +3268,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #337ab7;
+  color: #333333;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3289,7 +3289,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #23527c;
+  color: #0d0d0d;
   text-decoration: underline;
   background-color: transparent;
 }
