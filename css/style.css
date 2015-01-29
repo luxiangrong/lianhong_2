@@ -331,7 +331,7 @@ body {
   padding-left: 20px;
 }
 .side-nav ul li {
-  line-height: 25px;
+  line-height: 30px;
 }
 .side-nav ul li.active a,
 .side-nav ul li:hover a {
@@ -1003,4 +1003,20 @@ ul.pic-grid li p {
 ul.pic-grid li {
   zoom: 1;
   _display: inline;
+}
+.pic-comment-list {
+  border: 1px solid #548ec8;
+  border-top: none;
+}
+.pic-comment-list h3 {
+  background-color: #548ec8;
+  font-size: 18px;
+  margin-bottom: 0px;
+  color: #fff;
+  padding-left: 1em;
+  line-height: 48px;
+}
+.pic-comment-list .comment {
+  padding: 0 1em;
+  margin: 0 10px;
 }
