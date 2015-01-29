@@ -54,6 +54,9 @@ body {
     &.icon-h {
       background-position: -112px 0;
     }
+    &.icon-i {
+      background-position: -128px 0;
+    }
   }
   &.icon-24 {
     width: 24px;
@@ -71,6 +74,18 @@ body {
     }
     &.icon-d {
       background-position: -72px center;
+    }
+    &.icon-e {
+      background-position: -96px center;
+    }
+    &.icon-f {
+      background-position: -120px center;
+    }
+    &.icon-g {
+      background-position: -144px center;
+    }
+    &.icon-h {
+      background-position: -168px center;
     }
   }
 }
@@ -113,6 +128,34 @@ body {
   } 
 }
 
+.fix-toolbar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  ul {
+    list-style: none;
+    margin: 0;
+    li {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      margin-bottom: 3px;
+      cursor: pointer;
+      .icon {
+        vertical-align: middle;
+      }
+      &.feedback,
+      &.top {
+        background-color: #cbccce;
+      }
+      &.edit,
+      &.back {
+        background-color: #548ec8;
+      }
+    }
+  }
+}
 
 #header {
   height: 111px;
@@ -208,7 +251,7 @@ body {
 }
 
 #content {
-  margin-top: 30px;
+  margin-top: 20px;
   .col-left {
     float: left;
     min-height: 1px;
@@ -282,6 +325,9 @@ body {
   padding-bottom: 15px;
   text-align: right;
   color: #58595b;
+  &.no-bg {
+    background: none;
+  }
   a {
     color: #58595b;
   }
@@ -384,3 +430,7 @@ body {
 @import "news.less";
 
 @import "search.less";
+
+@import "communication.less";
+
+@import "pic.less";

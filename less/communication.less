@@ -1,0 +1,127 @@
+@import "mixins.less";
+
+@import "my-variables.less";
+
+.btn {
+  &.btn-edit {
+    background: url(../images/btn_02_bg.png) no-repeat center center;
+    width: 55px;
+    height: 36px;
+    color: #fff;
+    padding-left: 33px;
+    line-height: 36px;
+    &:hover {
+      color: #ddd;
+    }
+  }
+}
+
+#main-breadcrumbs {
+  .breadcrumbs {
+    margin-top: 10px;
+  }
+}
+
+.communication-title-image {
+  position: relative;
+  .btn {
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.communication-list {
+  table {
+    border-bottom: 3px solid #eaf1f5;
+    tr.ode {
+      td {
+        background-color: #eaf1f5;
+      }
+    }
+  }
+  h3 {
+    padding-left: 1em;
+    font-size: 14px;
+    color: #fff;
+    line-height: 32px;
+    background-color: #548ec8;
+  }
+  .count {
+    width: 70px; 
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 1em;
+  }
+  .topic {
+    font-size: 12px;
+    width: 820px;
+    h4 {
+      font-size: 12px;
+    }
+    p {
+      color: #6d6f71;
+    }
+  }
+  .author {
+    width: 150px; 
+    vertical-align: middle;
+    color: #548ec8;
+    a {
+      color: #548ec8;
+    }
+    .icon {
+      vertical-align: text-top;
+      margin-right: 5px;
+    }
+  }
+  .date {
+    vertical-align: middle;
+    color: #bcbec0;
+    font-size: 12px;
+  }
+  .comment-count {
+    width: 45px;
+    line-height: 25px;
+    text-align: center;
+    background: url(../images/comment_01_bg.png) no-repeat center center;
+    color: #939598;
+    font-size: 12px;
+    display: block;
+    font-style: normal;
+  }
+}
+
+.communication-detail {
+  .article {
+    padding-bottom: 1em;
+  }
+  .more-info {
+    a {
+      color: #548ec8;
+    }
+    line-height: 20px;
+    padding-right: 5em;
+    .icon {
+      margin-left: 5px;
+      margin-right: 10px;
+      vertical-align: middle;
+      margin-top: -6px;
+    }
+  }
+  .comment-item {
+    background-color: #eef4f7;
+    font-size: 12px;
+    color: #58595b;
+    padding: 30px 5em;
+    border-bottom: 3px solid #bcbec0;
+    .icon {
+      vertical-align: text-top;
+    }
+    .more-info {
+      text-align: right;
+      padding-right: 0;
+    }
+  }
+}

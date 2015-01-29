@@ -50,6 +50,9 @@ body {
 .icon.icon-16.icon-h {
   background-position: -112px 0;
 }
+.icon.icon-16.icon-i {
+  background-position: -128px 0;
+}
 .icon.icon-24 {
   width: 24px;
   height: 20px;
@@ -67,6 +70,18 @@ body {
 }
 .icon.icon-24.icon-d {
   background-position: -72px center;
+}
+.icon.icon-24.icon-e {
+  background-position: -96px center;
+}
+.icon.icon-24.icon-f {
+  background-position: -120px center;
+}
+.icon.icon-24.icon-g {
+  background-position: -144px center;
+}
+.icon.icon-24.icon-h {
+  background-position: -168px center;
 }
 .icon-new {
   width: 21px;
@@ -101,6 +116,34 @@ body {
     letter-spacing: 1px;
     /*间距1px*/
   }
+}
+.fix-toolbar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.fix-toolbar ul {
+  list-style: none;
+  margin: 0;
+}
+.fix-toolbar ul li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.fix-toolbar ul li .icon {
+  vertical-align: middle;
+}
+.fix-toolbar ul li.feedback,
+.fix-toolbar ul li.top {
+  background-color: #cbccce;
+}
+.fix-toolbar ul li.edit,
+.fix-toolbar ul li.back {
+  background-color: #548ec8;
 }
 #header {
   height: 111px;
@@ -193,7 +236,7 @@ body {
   background-position: 0 -238px;
 }
 #content {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 #content .col-left {
   float: left;
@@ -265,6 +308,9 @@ body {
   padding-bottom: 15px;
   text-align: right;
   color: #58595b;
+}
+.breadcrumbs.no-bg {
+  background: none;
 }
 .breadcrumbs a {
   color: #58595b;
@@ -682,6 +728,7 @@ hr.split {
   text-align: center;
   color: #939598;
   font-size: 12px;
+  margin-bottom: 20px;
 }
 .article p.subtitle .icon {
   vertical-align: text-top;
@@ -787,4 +834,173 @@ hr.split {
   padding-right: 1em;
   color: #999999;
   margin: 0;
+}
+.btn.btn-edit {
+  background: url(../images/btn_02_bg.png) no-repeat center center;
+  width: 55px;
+  height: 36px;
+  color: #fff;
+  padding-left: 33px;
+  line-height: 36px;
+}
+.btn.btn-edit:hover {
+  color: #ddd;
+}
+#main-breadcrumbs .breadcrumbs {
+  margin-top: 10px;
+}
+.communication-title-image {
+  position: relative;
+}
+.communication-title-image .btn {
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.communication-list table {
+  border-bottom: 3px solid #eaf1f5;
+}
+.communication-list table tr.ode td {
+  background-color: #eaf1f5;
+}
+.communication-list h3 {
+  padding-left: 1em;
+  font-size: 14px;
+  color: #fff;
+  line-height: 32px;
+  background-color: #548ec8;
+}
+.communication-list .count {
+  width: 70px;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 1em;
+}
+.communication-list .topic {
+  font-size: 12px;
+  width: 820px;
+}
+.communication-list .topic h4 {
+  font-size: 12px;
+}
+.communication-list .topic p {
+  color: #6d6f71;
+}
+.communication-list .author {
+  width: 150px;
+  vertical-align: middle;
+  color: #548ec8;
+}
+.communication-list .author a {
+  color: #548ec8;
+}
+.communication-list .author .icon {
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+.communication-list .date {
+  vertical-align: middle;
+  color: #bcbec0;
+  font-size: 12px;
+}
+.communication-list .comment-count {
+  width: 45px;
+  line-height: 25px;
+  text-align: center;
+  background: url(../images/comment_01_bg.png) no-repeat center center;
+  color: #939598;
+  font-size: 12px;
+  display: block;
+  font-style: normal;
+}
+.communication-detail .article {
+  padding-bottom: 1em;
+}
+.communication-detail .more-info {
+  line-height: 20px;
+  padding-right: 5em;
+}
+.communication-detail .more-info a {
+  color: #548ec8;
+}
+.communication-detail .more-info .icon {
+  margin-left: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-top: -6px;
+}
+.communication-detail .comment-item {
+  background-color: #eef4f7;
+  font-size: 12px;
+  color: #58595b;
+  padding: 30px 5em;
+  border-bottom: 3px solid #bcbec0;
+}
+.communication-detail .comment-item .icon {
+  vertical-align: text-top;
+}
+.communication-detail .comment-item .more-info {
+  text-align: right;
+  padding-right: 0;
+}
+ul.pic-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px;
+  /*根据不同字体字号或许需要做一定的调整*/
+  word-spacing: 0px;
+  font-size: 0;
+}
+ul.pic-grid li {
+  width: 215px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding: 7px;
+  margin-right: 23px;
+  margin-bottom: 25px;
+  vertical-align: top;
+  font-size: 12px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+ul.pic-grid li.no-margin {
+  margin-right: 0px;
+}
+ul.pic-grid li .pic-wrap {
+  position: relative;
+}
+ul.pic-grid li .pic-wrap img {
+  width: 213px;
+}
+ul.pic-grid li .pic-wrap p.fix-info {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background: url(../images/alpha_bg_01.png) repeat;
+  color: #d8d8d8;
+  text-align: right;
+  margin: 0px;
+  line-height: 40px;
+}
+ul.pic-grid li .pic-wrap p.fix-info .icon {
+  margin-top: -8px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+ul.pic-grid li .pic-wrap p.fix-info span {
+  margin-right: 5px;
+}
+ul.pic-grid li p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+ul.pic-grid li {
+  zoom: 1;
+  _display: inline;
 }
