@@ -157,41 +157,44 @@ body {
   }
 }
 
+.search-box {
+  position: absolute;
+  .search-input {
+    height: 26px;
+    width: 235px;
+    border: 1px solid #cccccc;
+    padding-right: 22px;
+    padding-left: 5px;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: @font-family-base;
+  }
+  .search-btn {
+    position: absolute;
+    border: none;
+    right: 0px;
+    top: 0px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/ic_search.png) no-repeat center center;
+    text-indent: -10000px;
+  }
+}
+
 #header {
   height: 111px;
   border-bottom: 3px solid #3fa3ef;
   .container {
     position: relative;
     height: 100%;
+    .search-box {
+      right: 0px;
+      top: 25px;
+    }
     .logo {
       position: absolute;
       left: 0px;
       top: 15px;
-    }
-    .search-box {
-      position: absolute;
-      right: 0px;
-      top: 25px;
-      .search-input {
-        height: 26px;
-        width: 235px;
-        border: 1px solid #cccccc;
-        padding-right: 22px;
-        padding-left: 5px;
-        font-size: 12px;
-        line-height: 12px;
-        font-family: @font-family-base;
-      }
-      .search-btn {
-        position: absolute;
-        border: none;
-        right: 0px;
-        top: 0px;
-        width: 24px;
-        height: 24px;
-        background: url(../images/ic_search.png) no-repeat center center;
-        text-indent: -10000px;
-      }
     }
     .top-nav {
       position: absolute;
@@ -291,6 +294,9 @@ body {
 }
 
 #footer {
+  .container {
+    position: relative;
+  }
   background-color: #11467f;
   color: #fff;
   font-size: 12px;
@@ -301,7 +307,7 @@ body {
   .copyright {
     position: absolute;
     top: 50px;
-    left: 200px;
+    left: 100px;
     width: 400px;
     line-height: 2;
   }
@@ -309,7 +315,7 @@ body {
     position: absolute;
     text-align: right;
     top: 50px;
-    right: 200px;
+    right: 100px;
     width: 600px;
     font-size: 13px;
     line-height: 2; 
@@ -360,8 +366,11 @@ body {
       ul {
         &.sub-nav {
           li {
+            background: url(../images/list_style_3_normal.jpg) no-repeat left center;
+            padding-left: 8px;
             &:hover,
             &.active {
+              background: url(../images/list_style_3_active.jpg) no-repeat left center;
               a {
                 color: #548ec8;
               }
@@ -396,6 +405,7 @@ body {
         padding-right: 5em;
         color: #999999;
         margin: 0;
+        font-size: 12px;
       }
     }
   }
@@ -423,6 +433,10 @@ body {
       }
     }
   }
+}
+
+.sub-banner-image {
+  margin-bottom: 30px;
 }
 
 @import "home.less";

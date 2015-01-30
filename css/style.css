@@ -145,25 +145,10 @@ body {
 .fix-toolbar ul li.back {
   background-color: #548ec8;
 }
-#header {
-  height: 111px;
-  border-bottom: 3px solid #3fa3ef;
-}
-#header .container {
-  position: relative;
-  height: 100%;
-}
-#header .container .logo {
+.search-box {
   position: absolute;
-  left: 0px;
-  top: 15px;
 }
-#header .container .search-box {
-  position: absolute;
-  right: 0px;
-  top: 25px;
-}
-#header .container .search-box .search-input {
+.search-box .search-input {
   height: 26px;
   width: 235px;
   border: 1px solid #cccccc;
@@ -173,7 +158,7 @@ body {
   line-height: 12px;
   font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
 }
-#header .container .search-box .search-btn {
+.search-box .search-btn {
   position: absolute;
   border: none;
   right: 0px;
@@ -182,6 +167,23 @@ body {
   height: 24px;
   background: url(../images/ic_search.png) no-repeat center center;
   text-indent: -10000px;
+}
+#header {
+  height: 111px;
+  border-bottom: 3px solid #3fa3ef;
+}
+#header .container {
+  position: relative;
+  height: 100%;
+}
+#header .container .search-box {
+  right: 0px;
+  top: 25px;
+}
+#header .container .logo {
+  position: absolute;
+  left: 0px;
+  top: 15px;
 }
 #header .container .top-nav {
   position: absolute;
@@ -283,10 +285,13 @@ body {
   height: 144px;
   margin-top: 20px;
 }
+#footer .container {
+  position: relative;
+}
 #footer .copyright {
   position: absolute;
   top: 50px;
-  left: 200px;
+  left: 100px;
   width: 400px;
   line-height: 2;
 }
@@ -294,7 +299,7 @@ body {
   position: absolute;
   text-align: right;
   top: 50px;
-  right: 200px;
+  right: 100px;
   width: 600px;
   font-size: 13px;
   line-height: 2;
@@ -338,6 +343,14 @@ body {
   color: #548ec8;
   text-decoration: none;
 }
+.side-nav ul li ul.sub-nav li {
+  background: url(../images/list_style_3_normal.jpg) no-repeat left center;
+  padding-left: 8px;
+}
+.side-nav ul li ul.sub-nav li:hover,
+.side-nav ul li ul.sub-nav li.active {
+  background: url(../images/list_style_3_active.jpg) no-repeat left center;
+}
 .side-nav ul li ul.sub-nav li:hover a,
 .side-nav ul li ul.sub-nav li.active a {
   color: #548ec8;
@@ -374,6 +387,7 @@ body {
   padding-right: 5em;
   color: #999999;
   margin: 0;
+  font-size: 12px;
 }
 .pagination {
   margin-top: 10px;
@@ -405,12 +419,15 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.sub-banner-image {
+  margin-bottom: 30px;
+}
 .col-right .news-box {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 .col-center .news-box {
   font-size: 13px;
-  margin: 20px 0;
+  margin: 27px 0;
 }
 .col-center .news-box ul {
   padding: 0px;
@@ -495,7 +512,7 @@ hr.split {
 }
 .news-box {
   font-size: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .news-box h3 {
   margin: 0;
@@ -544,6 +561,7 @@ hr.split {
   font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
   text-align: center;
   margin: 0px;
+  line-height: 1.5;
 }
 .news-box .banner-image p span {
   display: block;
@@ -581,9 +599,6 @@ hr.split {
 }
 .news-box ul li .icon-new {
   margin-left: 10px;
-}
-.news-box ul li a {
-  color: #333333;
 }
 .news-box ul li.first {
   margin-top: 0px;
@@ -681,6 +696,7 @@ hr.split {
   font-weight: normal;
   margin: 0;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .news-box .tab h4.active {
   background-position: 0 0px;
@@ -691,16 +707,16 @@ hr.split {
 }
 .enter-oa,
 .enter-hr {
-  height: 91px;
+  height: 90px;
   display: block;
   text-align: right;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .enter-oa strong,
 .enter-hr strong {
   width: 103px;
   height: 100%;
-  line-height: 91px;
+  line-height: 90px;
   display: inline-block;
   text-align: center;
   background-color: #3e6c99;
@@ -714,13 +730,16 @@ hr.split {
 .enter-hr {
   background: #f3f3f3 url(../images/ic_earth.png) no-repeat 80px center;
 }
+#carousel-list h3 {
+  margin-top: 0;
+}
 .article h3 {
   font-size: 16px;
   font-weight: normal;
   text-align: center;
 }
 .article p {
-  text-size: 13px;
+  font-size: 13px;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -926,6 +945,16 @@ hr.split {
 .btn.btn-edit:hover {
   color: #ddd;
 }
+.btn.btn-reply {
+  background: url(../images/btn_03_bg.png) no-repeat center center;
+  width: 53px;
+  height: 24px;
+  color: #fff;
+  line-height: 24px;
+}
+.btn.btn-reply:hover {
+  color: #ddd;
+}
 #main-breadcrumbs .breadcrumbs {
   margin-top: 10px;
 }
@@ -950,6 +979,7 @@ hr.split {
   color: #fff;
   line-height: 32px;
   background-color: #548ec8;
+  margin: 0;
 }
 .communication-list .count {
   width: 70px;
@@ -996,6 +1026,10 @@ hr.split {
 }
 .communication-detail .article {
   padding-bottom: 1em;
+  position: relative;
+}
+.communication-detail p {
+  line-height: 2;
 }
 .communication-detail .more-info {
   line-height: 20px;
@@ -1023,6 +1057,20 @@ hr.split {
 .communication-detail .comment-item .more-info {
   text-align: right;
   padding-right: 0;
+}
+.communication-detail .reply-btn-box {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+.pic-list,
+.pic-detail {
+  position: relative;
+}
+.pic-list .search-box,
+.pic-detail .search-box {
+  right: 0px;
+  top: 50px;
 }
 ul.pic-grid {
   list-style: none;

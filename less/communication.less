@@ -14,6 +14,16 @@
       color: #ddd;
     }
   }
+  &.btn-reply {
+    background: url(../images/btn_03_bg.png) no-repeat center center;
+    width: 53px;
+    height: 24px;
+    color: #fff;
+    line-height: 24px;
+    &:hover {
+      color: #ddd;
+    }
+  }
 }
 
 #main-breadcrumbs {
@@ -47,6 +57,7 @@
     color: #fff;
     line-height: 32px;
     background-color: #548ec8;
+    margin: 0;
   }
   .count {
     width: 70px; 
@@ -96,6 +107,10 @@
 .communication-detail {
   .article {
     padding-bottom: 1em;
+    position: relative;
+  }
+  p {
+    line-height: 2;
   }
   .more-info {
     a {
@@ -123,5 +138,10 @@
       text-align: right;
       padding-right: 0;
     }
+  }
+  .reply-btn-box {
+    position: absolute;
+    right: 0px;
+    top: -10px;
   }
 }
