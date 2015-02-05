@@ -44,6 +44,8 @@
 }
 .pika-stage img {
 	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 .pika-stage .caption {
 	position: absolute;
