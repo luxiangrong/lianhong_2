@@ -9,7 +9,6 @@
 		<link href="css/bootstrap.css" rel="stylesheet" />
 		<link type="text/css" href="css/right.css" rel="stylesheet" />
 		<link href="css/style.css" rel="stylesheet" />
-		
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -84,47 +83,70 @@
 				<h3><img src="images/title_pic_04.jpg" /></h3>
 				<div class="pikachoose">
 					<ul id="pikame" class="jcarousel-skin-pika">
-						<li><a href=""><img src="resources/img_07.jpg"/></a><span>109<i class="icon icon-24 icon-b"></i>109<i class="icon icon-24 icon-c"></i></span></li>
-						<li><a href=""><img src="resources/img_07.jpg"/></a><span>109<i class="icon icon-24 icon-b"></i>109<i class="icon icon-24 icon-c"></i></span></li>
-						<li><a href=""><img src="resources/img_07.jpg"/></a><span>109<i class="icon icon-24 icon-b"></i>109<i class="icon icon-24 icon-c"></i></span></li>
-						<li><a href=""><img src="resources/img_07.jpg"/></a><span>109<i class="icon icon-24 icon-b"></i>109<i class="icon icon-24 icon-c"></i></span></li>
-						<li><a href=""><img src="resources/img_07.jpg"/></a><span>109<i class="icon icon-24 icon-b"></i>109<i class="icon icon-24 icon-c"></i></span></li>
+						<li>
+							<a href=""><img src="resources/img_07.jpg"/></a>
+							<span>
+								<strong><i class="icon icon-16 icon-j"></i>点赞<em>(109)</em></strong>
+								<strong><i class="icon icon-16 icon-k"></i>评论<em>(109)</em></strong>
+							</span>
+						</li>
+						<li>
+							<a href=""><img src="resources/img_07.jpg"/></a>
+							<span>
+								<strong><i class="icon icon-16 icon-j"></i>点赞<em>(109)</em></strong>
+								<strong><i class="icon icon-16 icon-k"></i>评论<em>(109)</em></strong>
+							</span>
+						</li>
+						<li>
+							<a href=""><img src="resources/img_07.jpg"/></a>
+							<span>
+								<strong><i class="icon icon-16 icon-j"></i>点赞<em>(109)</em></strong>
+								<strong><i class="icon icon-16 icon-k"></i>评论<em>(109)</em></strong>
+							</span>
+						</li>
+						<li>
+							<a href=""><img src="resources/img_07.jpg"/></a>
+							<span>
+								<strong><i class="icon icon-16 icon-j"></i>点赞<em>(109)</em></strong>
+								<strong><i class="icon icon-16 icon-k"></i>评论<em>(109)</em></strong>
+							</span>
+						</li>
 					</ul>
 				</div>
 				<!-- <div class="pic-gallery">
-					<div class="pic-wrap">
-						<img src="resources/img_07.jpg" />
-						<div class="more-info">
-							109<i class="icon icon-24 icon-b"></i>
-							109<i class="icon icon-24 icon-c"></i>
-						</div>
-					</div>
-					<div class="pic-thumb">
-						<ul>
-							<li class="prev">
-								<div class="wrap">
-									<img src="images/ic_arraw_up.png" />
-								</div>
-							</li>
-							<li><img src="resources/img_07_thumb.jpg" />
-							</li>
-							<li class="current"><img src="resources/img_07_thumb.jpg" />
-							</li>
-							<li><img src="resources/img_07_thumb.jpg" />
-							</li>
-							<li><img src="resources/img_07_thumb.jpg" />
-							</li>
-							<li><img src="resources/img_07_thumb.jpg" />
-							</li>
-							<li><img src="resources/img_07_thumb.jpg" />
-							</li>
-							<li class="next">
-								<div class="wrap">
-									<img src="images/ic_arraw_down.png" />
-								</div>
-							</li>
-						</ul>
-					</div>
+				<div class="pic-wrap">
+				<img src="resources/img_07.jpg" />
+				<div class="more-info">
+				109<i class="icon icon-24 icon-b"></i>
+				109<i class="icon icon-24 icon-c"></i>
+				</div>
+				</div>
+				<div class="pic-thumb">
+				<ul>
+				<li class="prev">
+				<div class="wrap">
+				<img src="images/ic_arraw_up.png" />
+				</div>
+				</li>
+				<li><img src="resources/img_07_thumb.jpg" />
+				</li>
+				<li class="current"><img src="resources/img_07_thumb.jpg" />
+				</li>
+				<li><img src="resources/img_07_thumb.jpg" />
+				</li>
+				<li><img src="resources/img_07_thumb.jpg" />
+				</li>
+				<li><img src="resources/img_07_thumb.jpg" />
+				</li>
+				<li><img src="resources/img_07_thumb.jpg" />
+				</li>
+				<li class="next">
+				<div class="wrap">
+				<img src="images/ic_arraw_down.png" />
+				</div>
+				</li>
+				</ul>
+				</div>
 				</div> -->
 				<div class="pic-comment-list comments">
 					<h3>郭庄矿业公司两矿获2013年度安全与职业卫生评估A级矿井荣誉称号</h3>
@@ -183,9 +205,13 @@
 		<script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
 		<script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
 		<script language="javascript">
-			$(document).ready(function (){
-					$("#pikame").PikaChoose({carousel:true, carouselVertical:true});
+			$(document).ready(function() {
+				$("#pikame").PikaChoose({
+					carousel : true,
+					carouselVertical : true,
+					autoPlay: false
 				});
+			});
 		</script>
 	</body>
 </html>

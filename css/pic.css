@@ -1,0 +1,218 @@
+.pic-list,
+.pic-detail {
+  position: relative;
+}
+.pic-list .search-box,
+.pic-detail .search-box {
+  right: 0px;
+  top: 50px;
+}
+ul.pic-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px;
+  /*根据不同字体字号或许需要做一定的调整*/
+  word-spacing: 0px;
+  font-size: 0;
+}
+ul.pic-grid li {
+  width: 215px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding: 7px;
+  margin-right: 23px;
+  margin-bottom: 25px;
+  vertical-align: top;
+  font-size: 12px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+ul.pic-grid li.no-margin {
+  margin-right: 0px;
+}
+ul.pic-grid li .pic-wrap {
+  position: relative;
+}
+ul.pic-grid li .pic-wrap img {
+  width: 213px;
+}
+ul.pic-grid li p.fix-info {
+  color: #548ec8;
+  text-align: right;
+  margin: 0px;
+  line-height: 35px;
+  border-top: 1px solid #dfdfdf;
+}
+ul.pic-grid li p.fix-info .icon {
+  margin-top: -8px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+ul.pic-grid li p.fix-info span {
+  margin-right: 5px;
+  color: #bbbbbb;
+}
+ul.pic-grid li p.fix-info strong {
+  font-weight: normal;
+  cursor: pointer;
+}
+ul.pic-grid li p.fix-info strong .icon {
+  margin-right: 3px;
+}
+ul.pic-grid li p.fix-info strong .icon.icon-k {
+  margin-top: -2px;
+}
+ul.pic-grid li p.fix-info strong:hover {
+  color: #d37522;
+}
+ul.pic-grid li p.fix-info strong:hover .icon.icon-j {
+  background-position: -176px 0;
+}
+ul.pic-grid li p.fix-info strong:hover .icon.icon-k {
+  background-position: -192px 0;
+}
+ul.pic-grid li p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+ul.pic-grid li {
+  zoom: 1;
+  _display: inline;
+}
+.pic-comment-list {
+  border: 1px solid #548ec8;
+  border-top: none;
+}
+.pic-comment-list h3 {
+  background-color: #548ec8;
+  font-size: 18px;
+  margin-bottom: 0px;
+  color: #fff;
+  padding-left: 1em;
+  line-height: 48px;
+}
+.pic-comment-list .comment {
+  padding: 0 1em;
+  margin: 0 10px;
+}
+.pikachoose .more-info {
+  color: #548ec8;
+  text-align: right;
+  margin-top: 10px;
+  line-height: 24px;
+  padding-right: 300px;
+}
+.pikachoose .more-info .icon {
+  vertical-align: middle;
+  margin-top: -7px;
+}
+.pika-stage .caption {
+  z-index: 100;
+  line-height: 24px;
+}
+.pika-stage .caption .icon {
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 3px;
+}
+.pika-stage .caption .icon.icon-k {
+  margin-top: -2px;
+}
+.pika-stage .caption strong {
+  font-weight: normal;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.pika-stage .caption strong em {
+  color: #bbbbbb;
+  font-style: normal;
+}
+.pika-stage .caption strong:hover {
+  color: #d37522;
+}
+.pika-stage .caption strong:hover .icon.icon-j {
+  background-position: -176px 0;
+}
+.pika-stage .caption strong:hover .icon.icon-k {
+  background-position: -192px 0;
+}
+.pic-gallery:before,
+.pic-gallery:after {
+  content: " ";
+  display: table;
+}
+.pic-gallery:after {
+  clear: both;
+}
+.pic-gallery .pic-wrap {
+  width: 948px;
+  padding: 20px;
+  border: 1px solid #548ec8;
+  margin-right: 20px;
+  float: left;
+}
+.pic-gallery .pic-wrap .more-info {
+  color: #548ec8;
+  text-align: right;
+  margin-top: 10px;
+  line-height: 24px;
+}
+.pic-gallery .pic-wrap .more-info .icon {
+  vertical-align: middle;
+  margin-top: -7px;
+}
+.pic-gallery .pic-thumb {
+  padding: 10px;
+  border: 1px solid #548ec8;
+  width: 218px;
+  float: left;
+}
+.pic-gallery .pic-thumb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 600px;
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  overflow: hidden;
+}
+.pic-gallery .pic-thumb ul li {
+  text-align: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.pic-gallery .pic-thumb ul li .wrap {
+  padding: 3px;
+}
+.pic-gallery .pic-thumb ul li img {
+  width: 100%;
+}
+.pic-gallery .pic-thumb ul li.current {
+  border: 3px solid #548ec8;
+}
+.pic-gallery .pic-thumb ul li.prev,
+.pic-gallery .pic-thumb ul li.next {
+  border: 1px solid #548ec8;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  margin-bottom: 0px;
+}
+.pic-gallery .pic-thumb ul li.prev img,
+.pic-gallery .pic-thumb ul li.next img {
+  width: auto;
+}
+.pic-gallery .pic-thumb ul li.prev {
+  top: 0px;
+}
+.pic-gallery .pic-thumb ul li.next {
+  bottom: 0px;
+}
