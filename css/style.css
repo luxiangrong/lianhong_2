@@ -636,6 +636,9 @@ hr.split {
   padding-left: 0px;
   padding-right: 0px;
 }
+.news-box ul.tab-content {
+  padding-left: 135px;
+}
 .news-box ol {
   border: 1px solid #dfdfdf;
   padding: 16px;
