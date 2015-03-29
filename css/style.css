@@ -200,6 +200,7 @@ body {
   list-style: none;
 }
 #header .container .top-nav ul li.nav-item {
+  position: relative;
   font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
   color: #fff;
   list-style: none;
@@ -242,6 +243,40 @@ body {
 }
 #header .container .top-nav ul li.nav-item.nav-item-8 {
   background-position: 0 -238px;
+}
+#header .container .top-nav ul li.nav-item:hover ul.sub-nav {
+  max-height: 500px;
+}
+#header .container .top-nav ul li.nav-item ul.sub-nav {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 34px;
+  background: url(../images/bg01.png) left top;
+  text-align: left;
+  max-height: 0;
+  overflow: hidden;
+}
+#header .container .top-nav ul li.nav-item ul.sub-nav a {
+  color: #333333;
+}
+#header .container .top-nav ul li.nav-item ul.sub-nav li {
+  padding-left: 20px;
+}
+#header .container .top-nav ul li.nav-item ul.sub-nav li ul.grandson-nav {
+  margin: 0;
+  padding: 0;
+}
+#header .container .top-nav ul li.nav-item ul.sub-nav li ul.grandson-nav li {
+  padding-left: 10px;
+}
+#header .container .top-nav ul li.nav-item ul.sub-nav li ul.grandson-nav a {
+  font-size: 12px;
+  color: #666666;
 }
 #content {
   margin-top: 20px;
@@ -445,6 +480,9 @@ hr.split {
   height: 1px;
   margin: 0;
   padding: 0;
+}
+hr.split.dashed {
+  border-bottom: 1px dashed #999;
 }
 .jssorb12 div,
 .jssorb12 div:hover,

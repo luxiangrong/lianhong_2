@@ -210,6 +210,7 @@ body {
         list-style: none;
         li {
           &.nav-item {
+            position: relative;
             font-family: @font-family-base;
             color: #fff;
             list-style: none;
@@ -251,6 +252,41 @@ body {
             }
             &.nav-item-8 {
               background-position: 0 -238px;
+            }
+            &:hover {
+              ul.sub-nav {
+                max-height: 500px;
+              }
+            }
+            ul.sub-nav {
+              transition: all 0.5s;
+              margin: 0;
+              padding: 0;
+              position: absolute;
+              width: 100%;
+              left: 0;
+              top: 34px;
+              background: url(../images/bg01.png) left top;
+              text-align: left;
+              max-height: 0;
+              overflow:hidden;
+              a {
+                color: #333333;
+              }
+              li {
+                padding-left: 20px;
+                ul.grandson-nav {
+                  margin: 0;
+                  padding: 0;
+                  li {
+                    padding-left: 10px;
+                  }
+                  a {
+                    font-size: 12px;
+                    color: #666666;
+                  }
+                }
+              }
             }
           }
         }

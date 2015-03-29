@@ -32,6 +32,16 @@
 					<ul>
 						<li class="nav-item nav-item-1 active">
 							<a href="#">首页</a>
+							<ul class="sub-nav">
+								<li><a href="#">首页1</a>
+									<ul class="grandson-nav">
+										<li><a href="#">首页1-1首页1-1</li>
+										<li><a href="#">首页1-2</li>
+									</ul>
+								</li>
+								<li><a href="#">首页2</a></li>
+								<li><a href="#">首页3</a></li>
+							</ul>
 						</li>
 						<li class="nav-item nav-item-2">
 							<a href="#">联泓新闻</a>
@@ -41,6 +51,16 @@
 						</li>
 						<li class="nav-item nav-item-4">
 							<a href="#">联鸿时光</a>
+							<ul class="sub-nav">
+								<li><a href="#">泓人风采</a>
+									<ul class="grandson-nav">
+										<li><a href="#">泓人堂</a></li>
+										<li><a href="#">泓人新风</a></li>
+									</ul>
+								</li>
+								<li><a href="#">我思我写</a></li>
+								<li><a href="#">精华赏鉴</a></li>
+							</ul>
 						</li>
 						<li class="nav-item nav-item-5">
 							<a href="#">联想天地</a>
@@ -254,7 +274,7 @@
 									<a href="">原料空压机组试车一次成功神达昊达公司DMTO装置主风机一次试车</a>
 								</li>
 							</ul>
-							<hr class="split" />
+							<hr class="split dashed" />
 							<ul class="no-border" style="margin: 15px 0;">
 								<li>
 									<i class="icon-comment pull-right"><span class="webkit-badge">23</span></i>
@@ -530,12 +550,28 @@
 		<script type="text/javascript" src="js/jssor.js"></script>
 	    <script type="text/javascript" src="js/jssor.slider.js"></script>
 	    <script>
+	    
 	        jssor_slider1_starter = function (containerId) {
+	
+				var _SlideshowTransitions = [
+	            //Fade in R
+	            {$Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	            //Fade out L
+	            , { $Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+	            ];
 	
 	            var options = {
 	                $AutoPlay: true,                                   //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+	                $AutoPlayInterval: 5000,
 	                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-	
+					
+					$SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+	                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+	                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+	                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+	                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+	                },
+			
 	                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
 	                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
 	                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
