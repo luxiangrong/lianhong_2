@@ -176,11 +176,11 @@ body {
 }
 #header {
   height: 111px;
-  border-bottom: 3px solid #3fa3ef;
 }
 #header .container {
   position: relative;
   height: 100%;
+  border-bottom: 3px solid #3fa3ef;
 }
 #header .container .search-box {
   right: 0px;
